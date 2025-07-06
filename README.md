@@ -37,3 +37,6 @@ It stores each event in MongoDB and displays them in a live auto-refreshing UI b
 1. **Install dependencies**
 ```bash
 pip install -r requirements.txt
+2. Make Sure MongoDB is Running
+MongoDB must be running on your machine at:
+mongodb://localhost:27017
