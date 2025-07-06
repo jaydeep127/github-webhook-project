@@ -32,19 +32,52 @@ It stores each event in MongoDB and displays them in a live auto-refreshing UI b
 
 ---
 
-2. Make Sure MongoDB is Running
-MongoDB must be running on your machine at:
-
-mongodb://localhost:27017
-
-3. Run Flask App
-python app.py
 
 ## 🧪 How to Run the Project Locally
 
-### 1. Install Python Requirements
-```bash
-pip install -r requirements.txt
+- Create a new virtual environment  
+  ```
+  pip install virtualenv
+  ```
+
+- Create the virtual env  
+  ```
+  virtualenv venv
+  ```
+
+- Activate the virtual env  
+  ```
+  venv\Scripts\activate
+  ```
+
+- Install Python requirements  
+  ```
+  pip install -r requirements.txt
+  ```
+
+- Make sure MongoDB is running  
+  ```
+  mongodb://localhost:27017
+  ```
+
+- Run the Flask app  
+  ```
+  python app.py
+  ```
+
+- Expose localhost using Ngrok  
+  ```
+  ngrok http 5000
+  ```
+
+- Test GitHub Webhook: Push, Pull Request, Merge
+
+- View live updates (refreshes every 15 seconds)  
+  ```
+  http://localhost:5000/events/view
+  ```
+
+
 
 
 
